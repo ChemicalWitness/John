@@ -23,7 +23,7 @@ const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
 }
 
 // Server

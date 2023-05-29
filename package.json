@@ -4,7 +4,7 @@
   "description": "PET Project HTML CSS",
   "devDependencies": {
     "autoprefixer": "10.4.0",
-    "browser-sync": "2.27.7",
+    "browser-sync": "2.29.3",
     "del": "^7.0.0",
     "gulp": "4.0.2",
     "gulp-dart-sass": "^1.0.2",
@@ -23,7 +23,7 @@
   "scripts": {
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
+    "build": "gulp styles",
     "start": "gulp"
   },
   "browserslist": [
