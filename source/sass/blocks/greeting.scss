@@ -1,0 +1,35 @@
+.greeting {
+  background-color: #fff;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: $desktopWidth;
+
+    @media(min-width: $desktopWidth) {
+      flex-direction: row;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media(min-width: $desktopWidth) {
+      align-items: flex-start;
+    }
+  }
+
+
+
+  &__avatar {
+    order: -1;
+
+    @media(min-width: $desktopWidth) {
+      order: 1;
+    }
+  }
+}
