@@ -3,6 +3,15 @@
 @import "./global/variables.scss";
 @import "./global/visually-hidden.scss";
 
+// Global style
+*,
+::after,
+::before {
+  box-sizing: border-box
+}
+
 // Index
 @import "./blocks/page.scss";
 @import "./blocks/main-container.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
