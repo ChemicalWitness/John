@@ -1,3 +1,7 @@
-body {
-  background-color: #000;
-}
+@import "./global/font.scss";
+@import "./global/mixins.scss";
+@import "./global/variables.scss";
+@import "./global/visually-hidden.scss";
+
+// Index
+
