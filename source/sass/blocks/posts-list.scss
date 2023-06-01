@@ -1,0 +1,13 @@
+.posts-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media(min-width: $desktopWidth) {
+    display: flex;
+  }
+
+  &__item {
+    background-color: #fff;
+  }
+}

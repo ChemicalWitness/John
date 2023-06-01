@@ -1,0 +1,29 @@
+.recent-posts {
+  background-color: #edf7fa;
+
+  &__container {
+    margin: 0 auto;
+    max-width: $desktopWidth;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media(min-width: $desktopWidth) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__view-more {
+    display: none;
+    text-decoration: none;
+    color: #00a8cc;
+
+    @media(min-width: $desktopWidth) {
+      display: block;
+    }
+  }
+}
