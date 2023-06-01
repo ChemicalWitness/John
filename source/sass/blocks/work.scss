@@ -1,0 +1,19 @@
+.work {
+  display: flex;
+  flex-direction: column;
+
+  @media(min-width: $desktopWidth) {
+    flex-direction: row;
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
