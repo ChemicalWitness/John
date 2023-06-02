@@ -1,4 +1,5 @@
 .main-nav {
+  position: relative;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -13,7 +14,11 @@
 
 .main-nav__container {
   margin-top: 27px;
-  margin-bottom: 140px;
+  margin-bottom: 33px;
+
+  @media(min-width: $desktopWidth) {
+    margin-bottom: 140px;
+  }
 }
 
 .main-nav__toggle {
@@ -103,5 +108,11 @@
 }
 
 .main-nav--opened .main-nav__list {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #ffffff;
   display: flex;
 }
