@@ -4,39 +4,104 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1032px;
+  min-height: 65px;
 
   @media(min-width: $desktopWidth) {
     justify-content: flex-end;
   }
+}
 
-  &__container {
-    min-width: $mobileWidth;
+.main-nav__container {
+  margin-top: 27px;
+  margin-bottom: 140px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 20px;
+  right: 13px;
+  z-index: 2;
+  display: block;
+  width: 35px;
+  height: 30px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+  @media(min-width: $desktopWidth) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media(min-width: $desktopWidth) {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  text-decoration: none;
+  font-family: "Heebo Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  padding: 20px 100px;
+
+  @media(min-width: $desktopWidth) {
+    padding: 5px;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 24px;
+  height: 1px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    width: 25px;
+    height: 1px;
+    background-color: #000000;
   }
 
-  &__toggle {
-    @media(min-width: $desktopWidth) {
-      display: none;
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
     }
-  }
 
-  &__list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    &::after {
+      transform: rotate(-45deg);
+    }
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+  @media(min-width: $desktopWidth) {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    @media(min-width: $desktopWidth) {
-      max-width: 300px;
-    }
   }
+}
 
-  &__link {
-    text-decoration: none;
-    font-family: "Heebo Medium", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #000;
-  }
+.main-nav--opened .main-nav__list {
+  display: flex;
 }
