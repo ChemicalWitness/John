@@ -1,35 +1,93 @@
 .greeting {
   background-color: #fff;
+}
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    max-width: $desktopWidth;
+.greeting__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: $desktopWidth;
+  width: 94%;
 
-    @media(min-width: $desktopWidth) {
-      flex-direction: row;
-    }
+  @media(min-width: $desktopWidth) {
+    flex-direction: row;
+    align-items: flex-start;
   }
+}
 
-  &__info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.greeting__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    @media(min-width: $desktopWidth) {
-      align-items: flex-start;
-    }
+  @media(min-width: $desktopWidth) {
+    align-items: flex-start;
   }
+}
 
+.greeting__avatar {
+  display: block;
+  order: -1;
+  width: 175px;
+  border-radius: 50%;
+  box-shadow: -8px 8px 5px #B0E0E6;
+  margin-bottom: 34px;
 
+  @media(min-width: $desktopWidth) {
+    order: 1;
+    width: 243px;
+    margin-bottom: 142px;
+  }
+}
 
-  &__avatar {
-    order: -1;
+.greeting__title {
+  margin: 0;
+  margin-bottom: 21px;
+  padding: 0;
+  width: 83%;
+  font-family: "Heebo Bold", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
 
-    @media(min-width: $desktopWidth) {
-      order: 1;
-    }
+  @media(min-width: $desktopWidth) {
+    margin-top: 18px;
+    margin-bottom: 40px;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: left;
+  }
+}
+
+.greeting__text {
+  margin: 0;
+  margin-bottom: 27px;
+  padding: 0;
+  width: 87%;
+  text-align: center;
+
+  @media(min-width: $desktopWidth) {
+    margin-bottom: 47px;
+    text-align: left;
+  }
+}
+
+.greeting__download {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #FF6464;
+  margin: 0;
+  margin-bottom: 58px;
+  padding: 10px 21px;
+  font-family: "Heebo Medium", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  cursor: pointer;
+
+  @media(min-width: $desktopWidth) {
+    margin-bottom: 71px;
   }
 }
