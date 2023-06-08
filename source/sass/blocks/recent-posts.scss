@@ -1,29 +1,46 @@
 .recent-posts {
   background-color: #edf7fa;
+}
 
-  &__container {
-    margin: 0 auto;
-    max-width: $desktopWidth;
+.recent-posts__container {
+  margin: 0 auto;
+  padding-bottom: 38px;
+  max-width: $desktopWidth;
+  width: 94%;
+
+  @media(min-width: $desktopWidth) {
+    padding: 0;
   }
+}
 
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.recent-posts__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    @media(min-width: $desktopWidth) {
-      flex-direction: row;
-      justify-content: space-between;
-    }
+  @media(min-width: $desktopWidth) {
+    flex-direction: row;
+    justify-content: space-between;
   }
+}
 
-  &__view-more {
-    display: none;
-    text-decoration: none;
-    color: #00a8cc;
+.recent-posts__subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 60px;
 
-    @media(min-width: $desktopWidth) {
-      display: block;
-    }
+  @media(min-width: $desktopWidth) {
+    font-size: 22px;
+  }
+}
+
+.recent-posts__view-more {
+  display: none;
+  text-decoration: none;
+  color: #00a8cc;
+
+  @media(min-width: $desktopWidth) {
+    display: block;
   }
 }
