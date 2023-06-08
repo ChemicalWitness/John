@@ -13,10 +13,10 @@
 }
 
 .main-nav__container {
-  margin-top: 27px;
   margin-bottom: 33px;
 
   @media(min-width: $desktopWidth) {
+    margin-top: 17px;
     margin-bottom: 140px;
   }
 }
@@ -116,4 +116,10 @@
   top: 0;
   background-color: #ffffff;
   display: flex;
+}
+
+.main-nav--no-js {
+  position: static;
+  display: flex;
+
 }
