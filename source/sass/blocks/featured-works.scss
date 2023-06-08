@@ -5,6 +5,11 @@
 .featured-works__container {
   margin: 0 auto;
   max-width: $desktopWidth;
+  width: 94%;
+
+  @media(min-width: $desktopWidth) {
+    margin-bottom: 80px;
+  }
 }
 
 .featured-works__info {
@@ -14,5 +19,17 @@
 
   @media(min-width: $desktopWidth) {
     flex-direction: row;
+  }
+}
+
+.featured-works__subtitle {
+  margin: 0;
+  padding: 0;
+  line-height: 60px;
+
+  @media(min-width: $desktopWidth) {
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 22px;
   }
 }

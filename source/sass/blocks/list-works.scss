@@ -3,3 +3,15 @@
   margin: 0;
   padding: 0;
 }
+
+.list-works__item {
+  &:nth-child(2), &:nth-child(3) {
+    display: none;
+  }
+
+  @media(min-width: $desktopWidth) {
+    &:nth-child(2), &:nth-child(3) {
+      display: flex;
+    }
+  }
+}
