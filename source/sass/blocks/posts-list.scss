@@ -42,6 +42,16 @@
   font-weight: 700;
   line-height: 30px;
 
+  &:hover {
+    opacity: 0.8;
+    transition: all 0.2s;
+  }
+
+  &:active {
+    opacity: 0.6;
+    transition: all 0.2s;
+  }
+
   @media(min-width: $desktopWidth) {
     font-size: 26px;
     line-height: 38px;

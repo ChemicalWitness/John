@@ -87,6 +87,18 @@
   line-height: 29px;
   cursor: pointer;
 
+  &:hover {
+    opacity: 0.8;
+    background-color: #f35a5b;
+    transition: all 0.2s;
+  }
+
+  &:active {
+    opacity: 1;
+    background-color: #e84f52;
+    transition: all 0.2s;
+  }
+
   @media(min-width: $desktopWidth) {
     margin-bottom: 71px;
   }

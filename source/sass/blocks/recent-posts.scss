@@ -40,6 +40,15 @@
   text-decoration: none;
   color: #00a8cc;
 
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.6;
+    transition: all 0.2s;
+  }
+
   @media(min-width: $desktopWidth) {
     display: block;
   }
