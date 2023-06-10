@@ -6,6 +6,7 @@
   width: 100%;
   max-width: 1032px;
   min-height: 65px;
+  z-index: 100;
 
   @media(min-width: $desktopWidth) {
     justify-content: flex-end;
@@ -18,6 +19,12 @@
   @media(min-width: $desktopWidth) {
     margin-top: 17px;
     margin-bottom: 140px;
+  }
+
+  &--blog {
+    @media(min-width: $desktopWidth) {
+      margin-bottom: 104px;
+    }
   }
 }
 

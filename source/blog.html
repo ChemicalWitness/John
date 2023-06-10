@@ -5,123 +5,76 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/style.css" rel="stylesheet">
-  <title>Home Page</title>
+  <title>Blog</title>
 </head>
 <body class="page__body">
-
   <header class="main-header">
     <nav class="main-nav main-nav--no-js">
-      <div class="main-nav__container">
+      <div class="main-nav__container main-nav__container--blog">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Home</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Works</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="blog.html">Blog</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">Blog</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Contact</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <main class="main-container">
-    <h1 class="visually-hidden">Portfolio John</h1>
 
-    <section class="greeting">
-      <div class="greeting__container">
-        <div class="greeting__info">
-          <h2 class="greeting__title">Hi, I am John,
-          Creative Technologist</h2>
-          <p class="greeting__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-          <a class="greeting__download" href="#" download>Download Resume</a>
-        </div>
-          <img class="greeting__avatar" src="img/avatar.jpg" alt="avatar">
-      </div>
-    </section>
+  <main class="blog">
+    <div class="blog__container">
+      <h1 class="blog__title">Blog</h1>
+      <ul class="posts-list posts-list--blog">
 
-    <section class="recent-posts">
-      <h2 class="visually-hidden">Recent Posts</h2>
-      <div class="recent-posts__container">
-        <div class="recent-posts__wrapper">
-          <p class="recent-posts__subtitle">Recent posts</p>
-          <a class="recent-posts__view-more" href="#">View all</a>
-        </div>
-        <ul class="recent-posts__posts posts-list">
-          <li class="posts-list__item">
-            <h3 class="posts-list__title"><a class="posts-list__link" href="#">Making a design system from scratch</a></h3>
-            <p class="posts-list__info">12 Feb 2020 <span> | </span> Design, Pattern</p>
-            <p class="posts-list__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-          </li>
-          <li class="posts-list__item">
-            <h3 class="posts-list__title"><a class="posts-list__link" href="#">Creating pixel perfect icons in Figma</a></h3>
-            <p class="posts-list__info">12 Feb 2020 <span> | </span> Figma, Icon Design</p>
-            <p class="posts-list__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
+        <li class="posts-list__item posts-list__item--blog">
+          <h2 class="posts-list__title posts-list__title--blog">UI Interactions of the week</h2>
+          <div class="posts-list__info posts-list__info--blog">
+            <p class="posts-list__year">12 Feb 2019</p>
+            <span> | </span>
+            <p class="posts-list__category">Express, Handlebars</p>
+          </div>
+          <p class="posts-list__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </li>
 
-    <section class="featured-works">
-      <h2 class="visually-hidden">Featured works</h2>
-      <div class="featured-works__container">
-        <div class="featured-works__info">
-          <p class="featured-works__subtitle">Featured works</p>
-        </div>
-        <ul class="featured-works__list list-works">
-
-          <li class="list-works__item work">
-            <div class="work__image-wrapper">
-              <a class="work__link" href="#">
-                <img class="work__image" src="img/work-1.jpg" alt="work-1">
-              </a>
+        <li class="posts-list__item posts-list__item--blog">
+          <h2 class="posts-list__title posts-list__title--blog">UI Interactions of the week</h2>
+          <div class="posts-list__info posts-list__info--blog">
+            <p class="posts-list__year">12 Feb 2019</p>
+            <span> | </span>
+              <p class="posts-list__category">Express, Handlebars</p>
             </div>
-            <div class="work__content-wrapper">
-              <h3 class="work__title"><a class="work__link" href="#">Designing Dashboards</a></h3>
-              <div class="work__info">
-                <div class="work__year">2020</div>
-                <div class="work__category">Dashboard</div>
-              </div>
-              <p class="work__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
-          </li>
+          <p class="posts-list__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </li>
 
-          <li class="list-works__item work">
-            <div class="work__image-wrapper">
-              <a class="work__link" href="#">
-                <img class="work__image" src="img/work-2.jpg" alt="work-2">
-              </a>
-            </div>
-            <div class="work__content-wrapper">
-              <h3 class="work__title"><a class="work__link" href="#">Vibrant Portraits of 2020</a></h3>
-              <div class="work__info">
-                <div class="work__year">2018</div>
-                <div class="work__category">Illustration</div>
-              </div>
-              <p class="work__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
-          </li>
+        <li class="posts-list__item posts-list__item--blog">
+          <h2 class="posts-list__title posts-list__title--blog">UI Interactions of the week</h2>
+          <div class="posts-list__info posts-list__info--blog">
+            <p class="posts-list__year">12 Feb 2019</p>
+            <span> | </span>
+            <p class="posts-list__category">Express, Handlebars</p>
+          </div>
+          <p class="posts-list__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </li>
 
-          <li class="list-works__item work">
-            <div class="work__image-wrapper">
-              <a class="work__link" href="#">
-                <img class="work__image" src="img/work-3.jpg" alt="work-3">
-              </a>
-            </div>
-            <div class="work__content-wrapper">
-              <h3 class="work__title"><a class="work__link" href="#">36 Days of Malayalam type</a></h3>
-              <div class="work__info">
-                <div class="work__year">2018</div>
-                <div class="work__category">Typography</div>
-              </div>
-              <p class="work__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
-          </li>
+        <li class="posts-list__item posts-list__item--blog">
+          <h2 class="posts-list__title posts-list__title--blog">UI Interactions of the week</h2>
+          <div class="posts-list__info posts-list__info--blog">
+            <p class="posts-list__year">12 Feb 2019</p>
+            <span> | </span>
+            <p class="posts-list__category">Express, Handlebars</p>
+          </div>
+          <p class="posts-list__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </li>
 
-        </ul>
-      </div>
-    </section>
-
+      </ul>
+    </div>
   </main>
+
+
 
   <footer class="main-footer">
     <div class="main-footer__container">
